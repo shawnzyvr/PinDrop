@@ -20,6 +20,20 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "PinDrop Journal needs access to your camera so you can attach photos to your dropped pins."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "PinDrop Journal uses your location to drop pins at your exact GPS coordinates."
+        }
+      ]
+    ]
   }
 }
